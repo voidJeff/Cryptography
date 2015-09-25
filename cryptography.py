@@ -30,7 +30,7 @@ if action == "e":
     print(m_num)
     
     while n > 0:
-        new_n.apped(n_num[-n] + m_num[-m])
+        new_n.append(n_num[-n] + m_num[-m])
         m -= 1
         n -= 1
     if m == 0:
