@@ -18,23 +18,53 @@ if action == "e":
     key = input("Key: ")
     
     messagE = list(message)   #message
-    n = len(message)
-    n_num = [associations.find(x) for x in messagE]
+    n = len(message)        #how many letters
+    n_num = [associations.find(x) for x in messagE]  #transformed into numbers
     
     keY = list(key)     #key
-    m = len(key)
-    M = m
-    m_num = [associations.find(x) for x in keY]
-    
-    print(n_num)
-    print(m_num)
+    m = len(key)        #how many
+    M = m               #a copy
+    m_num = [associations.find(x) for x in keY]   #transformed into numbers
     
     while n > 0:
         new_n.append(n_num[-n] + m_num[-m])
         m -= 1
         n -= 1
-    if m == 0:
-        m = M
-        
+        if m == 0:
+            m = M
+
+    new_message = [associations[x] for x in new_n]
+    print("".join(new_message))
+
+elif action == "d":
+    message = input("Message: ")
+    key = input("Key: ")
+    
+    messagE = list(message)   #message
+    n = len(message)        #how many letters
+    n_num = [associations.find(x) for x in messagE]  #transformed into numbers
+    
+    keY = list(key)     #key
+    m = len(key)        #how many
+    M = m               #a copy
+    m_num = [associations.find(x) for x in keY]   #transformed into numbers
+    
+    while n > 0:
+        new_n.append(n_num[-n] - m_num[-m])
+        m -= 1
+        n -= 1
+        if m == 0:
+            m = M
+            
+    new_message = [associations[x] for x in new_n]
+    print("".join(new_message))
+
+elif action == "q":
+    print("Goodbye!")
+    
+else:
+    print("Did not understand command, try again.")
+
+
 
 
