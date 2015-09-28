@@ -30,12 +30,11 @@ if action == "e":
         new_num = n_num[-n] + m_num[-m]
         if new_num > 84:
             new_num -= 84
-        else:
-            new_n.append(new_num)
-            m -= 1
-            n -= 1
-            if m == 0:
-                m = M
+        new_n.append(new_num)
+        m -= 1
+        n -= 1
+        if m == 0:
+            m = M
 
     new_message = [associations[x] for x in new_n]
     print("".join(new_message))
@@ -57,12 +56,11 @@ elif action == "d":
         new_num = n_num[-n] + m_num[-m]
         if new_num < 1:
             new_num = 84 - newnum
-        else:
-            new_n.append(new_num)
-            m -= 1
-            n -= 1
-            if m == 0:
-                m = M
+        new_n.append(new_num)
+        m -= 1
+        n -= 1
+        if m == 0:
+            m = M
             
     new_message = [associations[x] for x in new_n]
     print("".join(new_message))
