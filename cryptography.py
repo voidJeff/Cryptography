@@ -70,6 +70,7 @@ while action_ != "q":
 
     else:
         print("Did not understand command, try again.")
+        action_ = "goagain")
 print("Goodbye!")
 
 
