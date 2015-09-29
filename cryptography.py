@@ -53,7 +53,7 @@ elif action == "d":
     m_num = [associations.find(x) for x in keY]   #transformed into numbers
     
     while n > 0:
-        new_num = n_num[-n] + m_num[-m]
+        new_num = n_num[-n] - m_num[-m]
         if new_num < 1:
             new_num = 84 - newnum
         new_n.append(new_num)
