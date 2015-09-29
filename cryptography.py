@@ -25,8 +25,7 @@ if action == "e":
     m = len(key)        #how many
     M = m               #a copy
     m_num = [associations.find(x) for x in keY]   #transformed into numbers
-    print(n_num)
-    print(messagE)
+    
     while n > 0:
         new_num = n_num[-n] + m_num[-m]
         if new_num > 84:
