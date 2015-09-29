@@ -55,7 +55,7 @@ elif action == "d":
     while n > 0:
         new_num = n_num[-n] - m_num[-m]
         if new_num < 1:
-            new_num = 84 - newnum
+            new_num = 85 + new_num
         new_n.append(new_num)
         m -= 1
         n -= 1
