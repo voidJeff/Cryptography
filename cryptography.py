@@ -9,12 +9,13 @@ Write and submit a program that encrypts and decrypts user data.
 
 See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptography/blob/master/README.md
 """
-action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+action_ = "goahead"
 while action != "q":
     associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
     n_num = []
     new_n = []
     action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    action_ = action
     if action == "e":
         message = input("Message: ")
         key = input("Key: ")
