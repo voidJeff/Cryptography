@@ -26,10 +26,11 @@ if action == "e":
     M = m               #a copy
     m_num = [associations.find(x) for x in keY]   #transformed into numbers
     print(n_num)
+    print(messagE)
     while n > 0:
         new_num = n_num[-n] + m_num[-m]
         if new_num > 84:
-            new_num -= 84
+            new_num -= 85
         new_n.append(new_num)
         m -= 1
         n -= 1
