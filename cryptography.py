@@ -68,7 +68,7 @@ while action_ != "q":
         new_message = [associations[x] for x in new_n]
         print("".join(new_message))
 
-    elif action = "q":
+    elif action == "q":
         action_ = action
     else:
         print("Did not understand command, try again.")
